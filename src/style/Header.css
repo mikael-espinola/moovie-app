@@ -1,0 +1,55 @@
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 6rem;
+  color: white;
+}
+
+.header-container h1 {
+  font-size: 28px;
+  animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.menu {
+  width: 30rem;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-options li {
+  cursor: pointer;
+}
+
+.search-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchName-label {
+  display: none;
+  opacity: 0.5;
+  margin-right: 0.5rem;
+}
+
+.show-up {
+  display: inline-block;
+}

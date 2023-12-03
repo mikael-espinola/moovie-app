@@ -1,0 +1,95 @@
+.template-movie-container {
+  height: max-content;
+  width: 100%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  place-items: center;
+}
+
+.card-movie {
+  background-color: #3f3e3e;
+  border: 0.5px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-movie {
+  width: 180px;
+  height: 285px;
+  margin: 0.5rem 0;
+}
+
+.img-movie img {
+  object-fit: cover;
+  width: 175px;
+  height: 280px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.img-movie img:hover {
+  width: 185px;
+  height: 285px;
+}
+
+.score {
+  margin: 0.1rem 0;
+}
+
+.info-button {
+  margin: 0.4rem 0;
+}
+
+.template-button--text {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.info-button {
+  border-radius: 10px;
+  padding: 0.1rem;
+  transition: 1.2s;
+}
+
+.info-button:hover {
+  padding: 0.5rem;
+}
+
+.button-to-up--container {
+  position: fixed;
+  bottom: 1.1rem;
+  right: 1.1rem;
+}
+
+.button-to-up {
+  padding: 1rem;
+  border-radius: 5rem;
+  transition: 1.2s;
+  cursor: pointer;
+}
+
+.button-to-up label {
+  pointer-events: none;
+}
+
+.button-to-up:hover {
+  padding: 1.5rem;
+}
