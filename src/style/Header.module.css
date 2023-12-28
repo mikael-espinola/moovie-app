@@ -1,4 +1,4 @@
-.title_name {
+header {
   position: fixed;
   top: -10px;
   left: 0;
@@ -11,7 +11,7 @@
   background-color: none;
 }
 
-.title_name h1 {
+header h1 {
   font-size: 2em;
   color: #fff;
   display: flex;
@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.title_name h1 span {
+header h1 span {
   font-size: 0.5em;
 }
 
@@ -38,7 +38,7 @@
   font-size: 2em;
 }
 
-.title_name li {
+header li {
   padding: 0.2em;
   display: flex;
 }
@@ -52,10 +52,6 @@
   color: #fff;
   cursor: pointer;
 }
-
-/* .genres_container {
-  font-size: 30px;
-} */
 
 .input_search input {
   border: none;
@@ -78,10 +74,10 @@
 }
 
 @media screen and (max-width: 975px) {
-  .title_name h1 {
+  header h1 {
     flex-direction: row;
   }
-  .title_name h1 span {
+  header h1 span {
     text-align: end;
     padding: 0.9em;
     margin-left: 0.9em;
