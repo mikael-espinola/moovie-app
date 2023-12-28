@@ -1,33 +1,53 @@
-import React from "react";
+import Container from "./Container";
 import "../../style/Header.css";
-import "../../style/BorderShadow.css";
+import Input from "../Form/Input";
+import { useState } from "react";
+import CategoriesMenu from "./CategoriesMenu";
 
-const HandleSearch = () => {
-  const searchName = document.querySelector(".searchName-label");
-  console.log("clicado");
-  searchName.classList.toggle("show-up");
+const Header = ({ setChoseCategory, setSearch }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const HandleClick = () => {};
+  const HandleClickHome = () => {
+    window.history.pushState({}, "", "/");
+    window.location.reload();
+  };
+
+  return (
+    <header className="title_name border_bottom">
+      <Container>
+        <h1 onClick={HandleClickHome}>
+          Moovie <span>Your Favourite Finder Movie</span>
+        </h1>
+        <ul className="list">
+          <li className="item">
+            <span onClick={HandleClickHome}>Home</span>
+          </li>
+          <li id="categoryButton" className="item">
+            <span onClick={() => setIsVisible(!isVisible)}>
+              Categorias
+              <CategoriesMenu
+                setChoseCategory={setChoseCategory}
+                isVisible={isVisible}
+              />
+            </span>
+          </li>
+          <li className="item">
+            <span onClick={HandleClick}>Login</span>
+          </li>
+          <li className="item">
+            <span className="input_search">
+              <Input
+                placeholder="Pesquise..."
+                type="text"
+                setSearch={setSearch}
+              />
+            </span>
+          </li>
+        </ul>
+      </Container>
+    </header>
+  );
 };
-
-const Header = () => (
-  <div className="header-container border-bottom">
-    <span className="title-container">
-      <h1>Moovie</h1>
-      <h4>Your Favourite Finder Movie</h4>
-    </span>
-    <section className="menu">
-      <ul className="menu-options">
-        <li>Menu</li>
-        <li>Categories</li>
-        <li className="search-button-container">
-          <label className="searchName-label">As branquelas</label>
-          <p className="search-button" onClick={HandleSearch}>
-            Search
-          </p>
-        </li>
-        <li>Login</li>
-      </ul>
-    </section>
-  </div>
-);
 
 export default Header;

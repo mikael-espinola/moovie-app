@@ -1,0 +1,22 @@
+.button_to_up_container {
+  position: fixed;
+  bottom: 1.1rem;
+  right: 1.1rem;
+  padding: 0.7em;
+  border-radius: 50%;
+  background-color: rgb(240, 232, 232);
+  transition: 1.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.button_to_up_container:hover {
+  padding: 1.5rem;
+}
+
+.button_to_up {
+  border: none;
+  cursor: pointer;
+  font-size: 2em;
+  color: #292626;
+}

@@ -1,18 +1,26 @@
 import "./style/App.css";
-import { useState } from "react";
 
 import Header from "./components/layout/Header";
-import GetInfoMovieApi from "./components/MovieApi";
-import RenderCardMovie from "./components/Main";
+import RenderMain from "./components/Main";
+import { useState } from "react";
+
+const getCategoryId = () => {
+  const url = new URL(window.location.href);
+  return url.searchParams.get("category");
+};
+const getSearch = () => {
+  const url = new URL(window.location.href);
+  return url.searchParams.get("search");
+};
 
 function App() {
-  let [moviesData, setMoviesData] = useState([]);
+  const [choseCategory, setChoseCategory] = useState(getCategoryId());
+  const [inputSearch, setSearch] = useState(getSearch());
 
   return (
     <>
-      <Header />;
-      <GetInfoMovieApi setMoviesData={setMoviesData} />
-      <RenderCardMovie moviesData={moviesData} />
+      <Header setSearch={setSearch} setChoseCategory={setChoseCategory} />
+      <RenderMain inputSearch={inputSearch} choseCategory={choseCategory} />
     </>
   );
 }

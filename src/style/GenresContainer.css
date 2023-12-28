@@ -1,0 +1,47 @@
+.genres-container {
+  background-color: #fff;
+  position: absolute;
+  top: 4em;
+  padding: 0.5em;
+  cursor: default;
+  border-radius: 15px;
+}
+
+.genres-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5px 8px;
+}
+
+.genres-container li {
+  list-style: none;
+  cursor: default;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.genres-container a {
+  cursor: pointer;
+  color: #222;
+  position: relative;
+  user-select: none;
+  font-size: 1.2em;
+}
+
+.genres-container a::after {
+  content: "";
+  position: absolute;
+  bottom: 1%;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #000;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.genres-container a:hover::after {
+  transform: scaleX(1);
+}

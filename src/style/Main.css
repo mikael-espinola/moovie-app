@@ -3,9 +3,11 @@
   width: 100%;
   color: #fff;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2px;
   place-items: center;
+  padding: 0px 5px;
+  margin-top: 6em;
 }
 
 .card-movie {
@@ -41,13 +43,12 @@
   object-fit: cover;
   width: 175px;
   height: 280px;
-  transition: 1s ease-in-out;
   cursor: pointer;
 }
 
 .img-movie img:hover {
-  width: 185px;
-  height: 285px;
+  transform: scale(1.1);
+  transition: 1.3s;
 }
 
 .score {
@@ -71,25 +72,21 @@
 
 .info-button:hover {
   padding: 0.5rem;
+  transition: 0.5s;
 }
 
-.button-to-up--container {
-  position: fixed;
-  bottom: 1.1rem;
-  right: 1.1rem;
+@media screen and (max-width: 1200px) {
+  .template-movie-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-
-.button-to-up {
-  padding: 1rem;
-  border-radius: 5rem;
-  transition: 1.2s;
-  cursor: pointer;
+@media screen and (max-width: 975px) {
+  .template-movie-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-.button-to-up label {
-  pointer-events: none;
-}
-
-.button-to-up:hover {
-  padding: 1.5rem;
+@media screen and (max-width: 640px) {
+  .template-movie-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
