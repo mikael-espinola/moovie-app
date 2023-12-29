@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/moovie-app/static/css/main.26d6c328.css",
+    "main.css": "/moovie-app/static/css/main.766a7883.css",
     "main.js": "/moovie-app/static/js/main.25d3b34d.js",
     "index.html": "/moovie-app/index.html",
-    "main.26d6c328.css.map": "/moovie-app/static/css/main.26d6c328.css.map",
+    "main.766a7883.css.map": "/moovie-app/static/css/main.766a7883.css.map",
     "main.25d3b34d.js.map": "/moovie-app/static/js/main.25d3b34d.js.map"
   },
   "entrypoints": [
-    "static/css/main.26d6c328.css",
+    "static/css/main.766a7883.css",
     "static/js/main.25d3b34d.js"
   ]
 }
