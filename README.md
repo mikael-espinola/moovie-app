@@ -10,7 +10,7 @@ Its main purpose is to help users find movies by providing features such as view
 
 Users should be able to:
 
-- Find movies: Users can search for movies of their interest.
+- Find movies: Users can search for movies of their interest using: scroling homepage, by categories and by search name.
 
 - Watch trailers: The application allows users to view movie trailers to get an idea of what to expect.
 
@@ -24,23 +24,21 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Moovie](https://mikael-espinola.github.io/Moovie/)
+- Live Site URL: [Moovie App](https://mikael-espinola.github.io/moovie-app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- React.JS
+- JS ES6 library
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- JS ES6 library
-- React.JS e suas bibliotecas
 
 ### What I learned
 
-- Web Development: Learning how to create a complete web application, combining HTML for structure, CSS for styling, and JavaScript for interactivity.
+- Web Development: Learning how to create a complete web application, combining HTML for structure, CSS for styling, and JavaScript in a React application for interactivity.
 
 - Integration of REST API: Understanding how to access and utilize REST APIs to obtain information about movies, such as trailers, reviews, and movie details.
 
@@ -70,5 +68,7 @@ Next updates:
 
 ## Author
 
-- linkedIn - [Mikael Espínola](https://www.linkedin.com/in/mikaelespinola)
-- E-mail - [GMAIL](mailto:mikaelespinolaa@gmail.com)
+### Mikael Espínola
+
+- [Portfolio](https://mikael-espinola.github.io/portfolio/)
+- [LinkedIn](https://www.linkedin.com/in/mikaelespinola)
